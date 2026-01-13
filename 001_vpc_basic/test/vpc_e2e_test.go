@@ -14,7 +14,7 @@ func TestTerraformVPCBasic(t *testing.T) {
 		TerraformDir: "./fixtures",
 	})
 
-	// defer terraform.Destroy(t, terraformOptions)
+	defer terraform.Destroy(t, terraformOptions)
 
 	terraform.InitAndApply(t, terraformOptions)
 
