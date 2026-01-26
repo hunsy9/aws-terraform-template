@@ -5,7 +5,3 @@ output "alb_endpoint" {
 output "tg_arn" {
     value = aws_lb_target_group.test_alb_tg.arn
 }
-
-output "instance_id" {
-    value = aws_instance.tg_instance[*].id
-}
