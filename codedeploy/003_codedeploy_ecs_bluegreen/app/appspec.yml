@@ -1,0 +1,9 @@
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: arn:aws:ecs:ap-northeast-2:619071317667:task-definition/codedeploy-ecs-task:2
+        LoadBalancerInfo:
+          ContainerName: "sample-app"
+          ContainerPort: 80

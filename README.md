@@ -1,4 +1,4 @@
-# aws-terraform-template
+# aws-deployment-terraform
 
 my aws lab history
 
@@ -8,8 +8,9 @@ my aws lab history
 ├── resource.tf
 ├── output.tf
 ├── provider.tf
+├── ...
 ├── README.md # about project
-└── test/ # E2E test code
+└── test/ # E2E test code, manual test if needed
 ```
 
 ## How to Deploy/Test
@@ -29,4 +30,4 @@ go test -v
 
 ## Tech Stack
 - **Infrastructure**: Terraform, AWS (VPC, EC2, EKS, etc.)
-- **Testing**: Go, Terratest
+- **Testing**: Go, Terratest, My Hand
